@@ -4788,7 +4788,8 @@ var Player =
       }
 
       if (fluid) {
-        style.paddingTop = ratioMultiplier * 100 + '%';
+        // style.paddingTop = `${ratioMultiplier * 100}%`;
+        this.setWidthOrHeight(style, 'height', '100%');
       } else {
         // If Width contains "auto", set "auto" in style
         this.setWidthOrHeight(style, 'width', width);
